@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Região Sudeste</title>
+</head>
+<body>
+    <h1>Região Sudeste</h1>
+    <ul>
+        <li>Praia de Copacabana</li>
+        <li>Praia do Guarujá</li>
+    </ul>
+    <textarea id="inputSudeste" placeholder="Adicione mais informações..."></textarea>
+    <button onclick="addItem()">Adicionar</button>
+    <script>
+        function addItem() {
+            const textarea = document.getElementById('inputSudeste');
+            const text = textarea.value.trim();
+            if (text) {
+                const ul = document.querySelector('ul');
+                const li = document.createElement('li');
+                li.textContent = text;
+                ul.appendChild(li);
+                textarea.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
