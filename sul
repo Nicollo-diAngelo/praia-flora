@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Região Sul</title>
+</head>
+<body>
+    <h1>Região Sul</h1>
+    <ul>
+        <li>Praia de Joaquina</li>
+        <li>Praia dos Ingleses</li>
+    </ul>
+    <textarea id="inputSul" placeholder="Adicione mais informações..."></textarea>
+    <button onclick="addItem()">Adicionar</button>
+    <script>
+        function addItem() {
+            const textarea = document.getElementById('inputSul');
+            const text = textarea.value.trim();
+            if (text) {
+                const ul = document.querySelector('ul');
+                const li = document.createElement('li');
+                li.textContent = text;
+                ul.appendChild(li);
+                textarea.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
+
