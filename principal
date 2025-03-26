@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praia Flora</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Praia Flora</h1>
+    <nav>
+        <a href="sul.html">Sul</a>
+        <a href="sudeste.html">Sudeste</a>
+        <a href="nordeste.html">Nordeste</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</body>
+</html>
